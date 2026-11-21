@@ -4,6 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // Relative paths, so the build works under /r3f-reversi/ on GitHub Pages.
+  base: "./",
   plugins: [
     react(),
     glsl({
